@@ -120,7 +120,7 @@ const Header: React.FC = () => {
               </svg>
             </button> */}
             <Link
-              href="#"
+              href="#" 
               className="hidden lg:block bg-transparent text-primary border hover:bg-primary border-primary hover:text-darkmode px-4 py-2 rounded-lg"
               onClick={() => {
                 setIsSignInOpen(true);
