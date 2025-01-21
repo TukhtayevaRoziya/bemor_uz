@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import RussiaFlag from '../../assets/russia-flag.svg';
-import UzbekistanFlag from '../../assets/UzbFlagLogo.svg';
 import { useTranslation } from 'react-i18next';
 
 interface NavbarTranslateProps {
@@ -30,12 +28,7 @@ const NavbarTranslate: React.FC<NavbarTranslateProps> = ({ onLanguageChange }) =
         className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-2 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
         onClick={toggleDropdown}
       >
-        <img
-          src={selectedLanguage === 'ru' ? RussiaFlag : UzbekistanFlag}
-          alt={selectedLanguage}
-          className="w-4 h-4 mr-1 sm:w-5 sm:h-5"
-        />
-        <span className="hidden sm:block">{selectedLanguage === 'ru' ? 'RU' : 'UZ'}</span>
+        <span className="hidden sm:block">{selectedLanguage === 'ru' ? 'RU' : 'UZ'}hey</span>
         <svg
           className="h-4 w-4 md:ml-2 ml-1 "
           xmlns="http://www.w3.org/2000/svg"
@@ -57,14 +50,12 @@ const NavbarTranslate: React.FC<NavbarTranslateProps> = ({ onLanguageChange }) =
             onClick={() => handleLanguageChange('ru')}
             className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
           >
-            <img src={RussiaFlag} alt="RU" className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />
             <span>RU</span>
           </li>
           <li
             onClick={() => handleLanguageChange('uz')}
             className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
           >
-            <img src={UzbekistanFlag} alt="UZ" className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />
             <span>UZ</span>
           </li>
         </ul>
