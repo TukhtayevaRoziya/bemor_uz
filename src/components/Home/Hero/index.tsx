@@ -53,11 +53,11 @@ const Hero = () => {
 
   return (
     <section
-      className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1"
+      className="relative md:pt-40 md:pb-0 py-20 overflow-hidden z-1"
       id="main-banner"
     >
       <div className="container mx-auto lg:max-w-screen-xl px-4">
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 mb-32">
           <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">
             <div className="flex gap-6 items-center lg:justify-start justify-center mb-5 mt-24">
               <Image
@@ -67,25 +67,25 @@ const Hero = () => {
                 height={40}
               />
               <p className="text-white sm:text-28 text-18 mb-0">
-                BemorUz On The <span className="text-primary">Go</span>
+                Bemor<span className="text-primary">Uz</span>
               </p>
             </div>
             <h1 className="font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10">
-              Buy and Sell <span className="text-primary">BemorUz</span> of your{" "}
-              <span className="text-primary">choice</span>!
+               <span className="text-primary">BemorUz</span> bilan
+              <span className="text-primary">  qulay</span>!
             </h1>
             <div className="flex items-center md:justify-start justify-center gap-8">
               <button
                 className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50"
                 onClick={() => setIsBuyingOpen(true)}
               >
-                Buy BemorUz
+                Be'morlar uchun
               </button>
               <button
                 className="bg-transparent border border-primary rounded-lg text-21 font-medium hover:bg-primary hover:text-darkmode text-primary py-2 px-7"
                 onClick={() => setIsSellingOpen(true)}
               >
-                Sell BemorUz
+                Shifokorlar uchun
               </button>
             </div>
             <div className="flex items-center md:justify-start justify-center gap-12 mt-20">
@@ -115,8 +115,8 @@ const Hero = () => {
               <Image
                 src="/images/hero/banner-image.png"
                 alt="Banner"
-                width={1150}
-                height={1150}
+                width={700}
+                height={700}
               />
             </div>
           </motion.div>

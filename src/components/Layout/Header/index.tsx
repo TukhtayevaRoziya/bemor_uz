@@ -157,7 +157,7 @@ const Header: React.FC = () => {
             >
               Sign Up
             </Link>
-            <Space wrap>
+            {/* <Space wrap>
               <Select
                 prefix="User"
                 defaultValue="lucy"
@@ -169,7 +169,7 @@ const Header: React.FC = () => {
                   { value: "Ru", label: "Ru" },
                 ]}
               />
-            </Space>
+            </Space> */}
             {isSignUpOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
                 <div

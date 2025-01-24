@@ -19,7 +19,7 @@ export const pricedeta: {
   padding: string;
 }[] = [
   {
-    title: "Bitcoin",
+    title: "Be'morlar",
     short: "BTC/USD",
     icon: "/images/icons/icon-bitcoin.svg",
     background: "bg-warning bg-opacity-20",
@@ -30,7 +30,7 @@ export const pricedeta: {
     padding: "px-4 py-3",
   },
   {
-    title: "Ethereum",
+    title: "Shifokorlar",
     short: "ETH/USD",
     icon: "/images/icons/icon-ethereum.svg",
     background: "bg-light_grey",
@@ -41,18 +41,18 @@ export const pricedeta: {
     padding: "px-4 py-2",
   },
   {
-    title: "Bitcoin Cash ",
+    title: "Xizmat Ko'rsatish",
     short: "BTC/USD",
     icon: "/images/icons/icon-bitcoin-circle.svg",
     background: "bg-warning bg-opacity-20",
     price: "$443.27",
     mark: "$3,785.82 (-88.3%)",
-    width: 46,
-    height: 46,
-    padding: "px-0 py-0",
+    width: 18,
+    height: 23,
+    padding: "px-4 py-3",
   },
   {
-    title: "Litecoin",
+    title: "Xujjatlar",
     short: "LTC/USD",
     icon: "/images/icons/icon-litecoin.svg",
     background: "bg-light_grey",
@@ -63,7 +63,7 @@ export const pricedeta: {
     padding: "px-4 py-3",
   },
   {
-    title: "Solana",
+    title: "Shifoxonalar",
     short: "SOL/USD",
     icon: "/images/icons/icon-solana.svg",
     background: "bg-light_grey",
@@ -72,18 +72,7 @@ export const pricedeta: {
     width: 24,
     height: 24,
     padding: "px-4 py-3",
-  },
-  {
-    title: "Dogecoin",
-    short: "DOGE/USD",
-    icon: "/images/icons/icon-dogecoin.svg",
-    background: "bg-light_grey",
-    price: "$0.394",
-    mark: "$0.7316 (-46.2%)",
-    width: 46,
-    height: 46,
-    padding: "px-0 py-0",
-  },
+  }
 ];
 
 export const portfolioData: { image: string; title: string }[] = [
