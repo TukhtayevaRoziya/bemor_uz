@@ -14,13 +14,16 @@ const font = DM_Sans({ subsets: ["latin"] });
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  // params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  // params: { locale: string };
 }) {
+
+  // const {locale} = params
+  // const dictionary = await getDictionary(locale);
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes('en')) {
     notFound();
   }
 
@@ -28,7 +31,7 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={'uz'} suppressHydrationWarning>
       <body className={`${font.className}`}>
         <ThemeProvider
           attribute="class"

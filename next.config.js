@@ -10,8 +10,20 @@ const nextConfig = {
       _next_intl_trailing_slash: "false",
     },
     images: {
-      domains: ['example.com', 'another-example.com'],
-    },
+        remotePatterns: [
+          {
+            protocol: 'https', // Or 'http' if needed
+            hostname: 'example.com', // Replace with your domain
+            port: '',          // Optional: specify a port if needed
+            pathname: '/images/**', // Optional: specify a pathname pattern
+          },
+          { // Add additional remote patterns as needed
+            protocol: 'https',
+            hostname: 'another-example.com',
+            pathname: '/**',
+          },
+        ],
+      },
   };
   
   module.exports = nextConfig;
