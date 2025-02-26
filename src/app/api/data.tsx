@@ -78,23 +78,23 @@ export const pricedeta: {
 export const portfolioData: { image: string; title: string }[] = [
   {
     image: "/images/portfolio/icon-wallet.svg",
-    title: "Manage your portfolio",
+    title: "Arzon va Qulay",
   },
   {
     image: "/images/portfolio/icon-vault.svg",
-    title: "Vault protection",
+    title: "Video Chat",
   },
   {
     image: "/images/portfolio/icon-mobileapp.svg",
-    title: "Mobile apps",
+    title: "Mobile APP",
   },
 ];
 
 export const upgradeData: { title: string }[] = [
-  { title: "100% Secure" },
-  { title: "A Fraction of the Cost" },
-  { title: "More Durable" },
-  { title: "Easier to Use" },
+  { title: "Aptechka" },
+  { title: "Jarohatni tozalash" },
+  { title: "LEYKOPLASTIR" },
+  { title: "Toza bog'lamlar ishlatish" },
 ];
 
 export const perksData: {
@@ -105,20 +105,20 @@ export const perksData: {
 }[] = [
   {
     icon: "/images/perks/icon-support.svg",
-    title: "24/7 Support",
-    text: "Need help? Get your requests solved quickly via support team.",
+    title: "24/7 Foydalanish",
+    text: "Yordam kerakmi? Support orqali barcha savollaringizga javob oling",
     space: "lg:mt-8",
   },
   {
     icon: "/images/perks/icon-community.svg",
-    title: "Community",
-    text: "Join the conversations on our worldwide OKEx communities",
+    title: "Jamiyat",
+    text: "Biz bilan kasallik davringizni oson va qulaylashtiring",
     space: "lg:mt-14",
   },
   {
     icon: "/images/perks/icon-academy.svg",
-    title: "Academy",
-    text: "Learn blockchain and<br /> crypto for free.",
+    title: "Bilim olish",
+    text: "Boshlang'ich tez tibbiy yordam olishni o'rganing.",
     space: "lg:mt-4",
   },
 ];
@@ -131,8 +131,8 @@ export const timelineData: {
 }[] = [
   {
     icon: "/images/timeline/icon-planning.svg",
-    title: "Planning",
-    text: "Map the project's scope and architecture",
+    title: "Dorilar",
+    text: "E-Dorilar ro'yxati",
     position: "md:top-0 md:left-0",
   },
   {

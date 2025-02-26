@@ -85,7 +85,7 @@ const Signin = () => {
             type="submit"
             className="bg-primary w-full py-3 rounded-lg text-18 font-medium border border-primary hover:text-primary hover:bg-transparent"
           >
-            Sign In {loading && <Loader />}
+            Kirish {loading && <Loader />}
           </button>
         </div>
       </form>
@@ -94,12 +94,12 @@ const Signin = () => {
         href="/forgot-password"
         className="mb-2 inline-block text-base text-dark hover:text-primary text-white dark:hover:text-primary"
       >
-        Forgot Password?
+        Parolni unutdingizmi?
       </Link>
       <p className="text-body-secondary text-white text-base">
-        Not a member yet?{" "}
+        Ro'yxatdan o'tmaganmisiz?{" "}
         <Link href="/" className="text-primary hover:underline">
-          Sign Up
+          Ro'yxatdan o'tish
         </Link>
       </p>
     </>

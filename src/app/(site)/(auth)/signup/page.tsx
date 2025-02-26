@@ -4,13 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Sign Up | Property",
+    "Ro'yxatdan o'tish | Property",
 };
 
 const SignupPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign Up Page" />
+      <Breadcrumb pageName="Ro'yxatdan o'tish Page" />
 
       <SignUp />
     </>

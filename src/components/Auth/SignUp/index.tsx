@@ -47,7 +47,7 @@ const SignUp = () => {
 
       <span className="z-1 relative my-8 block text-center before:content-[''] before:absolute before:h-px before:w-40% before:bg-dark_border before:bg-opacity-60 before:left-0 before:top-3 after:content-[''] after:absolute after:h-px after:w-40% after:bg-dark_border after:bg-opacity-60 after:top-3 after:right-0">
         <span className="text-body-secondary relative z-10 inline-block px-3 text-base text-white">
-          OR
+          Yoki
         </span>
       </span>
 
@@ -55,8 +55,8 @@ const SignUp = () => {
         <div className="mb-[22px]">
           <input
             type="text"
-            placeholder="Name"
-            name="name"
+            placeholder="Ism"
+            name="Ism"
             required
             className="w-full rounded-md border border-dark_border border-opacity-60 border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-grey focus:border-primary focus-visible:shadow-none text-white dark:focus:border-primary"
           />
@@ -73,8 +73,8 @@ const SignUp = () => {
         <div className="mb-[22px]">
           <input
             type="password"
-            placeholder="Password"
-            name="password"
+            placeholder="Parol"
+            name="parol"
             required
             className="w-full rounded-md border border-dark_border border-opacity-60 border-solid bg-transparent px-5 py-3 text-base text-dark outline-none transition placeholder:text-grey focus:border-primary focus-visible:shadow-none text-white dark:focus:border-primary"
           />
@@ -84,26 +84,26 @@ const SignUp = () => {
             type="submit"
             className="flex w-full items-center text-18 font-medium justify-center rounded-md bg-primary px-5 py-3 text-darkmode transition duration-300 ease-in-out hover:bg-transparent hover:text-primary border-primary border "
           >
-            Sign Up {loading && <Loader />}
+            Ro'yxatdan o'tish {loading && <Loader />}
           </button>
         </div>
       </form>
 
       <p className="text-body-secondary mb-4 text-white text-base">
-        By creating an account you are agree with our{" "}
+        Xisob yaratish orqali bizning{" "}
         <a href="/#" className="text-primary hover:underline">
-          Privacy
+          Maxfiylik
         </a>{" "}
-        and{" "}
+        va{" "}
         <a href="/#" className="text-primary hover:underline">
-          Policy
-        </a>
+          Xavfsizlik
+        </a> ga rozilik bildirasiz
       </p>
 
       <p className="text-body-secondary text-white text-base">
-        Already have an account?
+        Hisobingiz bormi?
         <Link href="/" className="pl-2 text-primary hover:underline">
-          Sign In
+          kirish
         </Link>
       </p>
     </>

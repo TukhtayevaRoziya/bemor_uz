@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { headerData } from "../Header/Navigation/menuData";
 import Logo from "./Logo";
-import Image from "next/image";
 import HeaderLink from "../Header/Navigation/HeaderLink";
 import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import Signin from "@/components/Auth/SignIn";
@@ -14,6 +13,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 import { MehOutlined, SmileOutlined } from "@ant-design/icons";
 import { Select, Space } from "antd";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -87,7 +87,18 @@ const Header: React.FC = () => {
     >
       <div className="lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
-          <Logo />
+           <div className="flex gap-6 items-center lg:justify-start justify-center ">
+                        <Image
+                          src="/images/icons/icon-bag.svg"
+                          alt="icon"
+                          width={40}
+                          height={40}
+                        />
+                        <p className="text-white sm:text-28 text-18 mb-0">
+                          Bemor<span className="text-primary">Uz</span>
+                        </p>
+                      </div>
+          {/* <Logo /> */}
           <nav className="hidden lg:flex flex-grow items-center gap-8 justify-center">
             {headerData.map((item, index) => (
               <HeaderLink key={index} item={item} />
@@ -126,7 +137,7 @@ const Header: React.FC = () => {
                 setIsSignInOpen(true);
               }}
             >
-              Sign In
+              Kirish
             </Link>
             {isSignInOpen && (
               <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -137,7 +148,7 @@ const Header: React.FC = () => {
                   <button
                     onClick={() => setIsSignInOpen(false)}
                     className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
-                    aria-label="Close Sign In Modal"
+                    aria-label="Close kirish Modal"
                   >
                     <Icon
                       icon="tabler:currency-xrp"
@@ -155,7 +166,7 @@ const Header: React.FC = () => {
                 setIsSignUpOpen(true);
               }}
             >
-              Sign Up
+              Ro'yxatdan o'tish
             </Link>
             {/* <Space wrap>
               <Select
@@ -179,7 +190,7 @@ const Header: React.FC = () => {
                   <button
                     onClick={() => setIsSignUpOpen(false)}
                     className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
-                    aria-label="Close Sign Up Modal"
+                    aria-label="Close Ro'yxatdan o'tish Modal"
                   >
                     <Icon
                       icon="tabler:currency-xrp"
@@ -235,7 +246,7 @@ const Header: React.FC = () => {
                   setNavbarOpen(false);
                 }}
               >
-                Sign In
+                Kirish
               </Link>
               <Link
                 href="#"
@@ -245,7 +256,7 @@ const Header: React.FC = () => {
                   setNavbarOpen(false);
                 }}
               >
-                Sign Up
+                Ro'yxatdan o'tish
               </Link>
             </div>
           </nav>

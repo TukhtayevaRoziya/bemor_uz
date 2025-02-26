@@ -23,11 +23,10 @@ const TimeLine = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-muted sm:text-28 text-18 mb-9">
-              Development <span className="text-primary">timeline</span>
+               <span className="text-primary">Bemorlarga</span> tezkor yordam
             </p>
             <h2 className="text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto mb-20">
-              We can enter at any point or help you all the way through the
-              development cycle.
+              Be'morlarga o'zlarining tibbiy ma'lumotlari, davolanish jarayoni va maslahatlar
             </h2>
           </motion.div>
           <motion.div
@@ -47,15 +46,15 @@ const TimeLine = () => {
               </div>
               <div className="absolute lg::top-40 top-36 lg:left-0 -left-20 w-72 flex items-center gap-6">
                 <div className="text-right">
-                  <h5 className="text-muted text-28 mb-3">Planning</h5>
+                  <h5 className="text-muted text-28 mb-3">Dorilar</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Map the project's scope and architecture
+                   Elektron Dorilar Ro'yxati 
                   </p>
                 </div>
                 <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
                   <Image
                     src="/images/timeline/icon-planning.svg"
-                    alt="Planning"
+                    alt="Dorilar"
                     width={44}
                     height={44}
                     className="w-16 h-16 "
@@ -72,17 +71,17 @@ const TimeLine = () => {
                   />
                 </div>
                 <div className="text-left">
-                  <h5 className="text-muted text-28 mb-3">Refinement</h5>
+                  <h5 className="text-muted text-28 mb-3">Polikilinika</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Refine and improve your solution
+                    O'z Polikilinikangizni lokatsiya orqali topish
                   </p>
                 </div>
               </div>
               <div className="absolute lg:bottom-48 bottom-36 lg:left-0 -left-20 w-72 flex items-center gap-6">
                 <div className="text-right">
-                  <h5 className="text-muted text-28 mb-3">Prototype</h5>
+                  <h5 className="text-muted text-28 mb-3">Kasalliklar</h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Build a working prototype to test your product
+                    Oldingi kasalliklar va qa'bul qilgan dorilar
                   </p>
                 </div>
                 <div className="bg-light_grey bg-opacity-45 backdrop-blur-sm px-6 py-2 h-fit rounded-full">
@@ -107,10 +106,10 @@ const TimeLine = () => {
                 </div>
                 <div className="text-left">
                   <h5 className="text-muted text-nowrap text-28 mb-3">
-                    Support
+                    Muloqotlar
                   </h5>
                   <p className="text-18 text-muted text-opacity-60">
-                    Deploy the product and ensure full support by us
+                    O'z shifokoringiz bilan muloqot qilish
                   </p>
                 </div>
               </div>

@@ -28,15 +28,15 @@ const Portfolio = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="sm:text-28 text-18 text-muted mb-4">
-              BemorUzcurrency <span className="text-primary">Portfolio</span>
+              BemorUz <span className="text-primary">Platformasi</span>
             </p>
             <h2 className="text-white sm:text-40 text-30 mb-4 font-medium">
-              Create your crypto portfolio today with Cryp
-              <span className="text-primary">Go</span>!
+               Bemor
+              <span className="text-primary">UZ</span> bilan barcha ma'lumotlarga ega bo'ling!
             </h2>
             <p className="text-muted text-opacity-60 text-18">
-              Coinbase has a variety of features that make it the best
-              <br className="md:block hidden" /> place to start trading.
+             Shifokorlar va bemorlar bilan aloqani yaxshilash
+              <br className="md:block hidden" />.
             </p>
 
             <table className="w-full sm:w-[80%]">

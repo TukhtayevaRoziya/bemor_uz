@@ -22,15 +22,15 @@ const Work = () => {
   const services = [
     {
       icon: "/images/icons/icon-consulting.svg",
-      text: "Blockchain Consulting",
+      text: "Dorilaringiz ro'yxatini elektron olish",
     },
     {
       icon: "/images/icons/icon-blockchain.svg",
-      text: "Blockchain Solutions",
+      text: "Barcha kasalliklar haqida",
     },
     {
       icon: "/images/icons/icon-Services.svg",
-      text: "Custom Development",
+      text: "Dorilarni uyingizgacha yetkazib berish",
     },
   ];
 
@@ -43,10 +43,10 @@ const Work = () => {
             className="lg:col-span-7 col-span-12"
           >
             <p className="sm:text-28 text-18 text-white">
-              Work with <span className="text-primary">us</span>
+            <span className="text-primary">Biz</span> bilan ishlang
             </p>
             <h2 className="sm:text-40 text-30 text-white lg:w-full md:w-70% font-medium">
-              Successfully launch your blockchain project.
+              Kasallik Davringizni qulayroq  o'tkazing.
             </h2>
             <div className="grid md:grid-cols-2 gap-7 mt-11">
               {services.map((service, index) => (
