@@ -16,8 +16,8 @@ import { Select, Space } from "antd";
 import Image from "next/image";
 
 const Header: React.FC = () => {
-  const pathUrl = usePathname();
-  const { theme, setTheme } = useTheme();
+  // const pathUrl = usePathname();
+  // const { theme, setTheme } = useTheme();
 
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
