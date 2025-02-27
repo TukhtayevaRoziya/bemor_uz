@@ -8,3 +8,11 @@ export const headerData: HeaderItem[] = [
   { label: "Birinchi yordam", href: "/#upgrade" },
   // { label: "Docs", href: "/documentation#version" },
 ];
+export const headerData2: HeaderItem[] = [
+  { label: "Bosh sahifa", href: "/en/home#main-banner" },
+  { label: "Dorixona", href: "/en/pharmacy" },
+  // { label: "Shifokorlar", href: "/en/doctors" },
+  { label: "Tibbiy yo'riqnomalar", href: "/en/medKnow" },
+  { label: "Profil", href: "/en/profile" },
+  // { label: "Docs", href: "/documentation#version" },
+];

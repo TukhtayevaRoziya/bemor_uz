@@ -39,7 +39,7 @@ export default async function LocaleLayout({
           defaultTheme="system"
         >
           <Aoscompo>
-            <Header />
+            {/* <Header  /> */}
 
             <NextIntlClientProvider messages={messages}>
               {children}

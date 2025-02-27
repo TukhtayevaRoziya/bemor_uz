@@ -6,6 +6,7 @@ import Platform from "@/components/Home/platform";
 import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
+import Header from "@/components/Layout/Header";
 
 // import {useTranslations} from 'next-intl';
 // import {Link} from '@/i18n/routing';
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <main>
       {/* <h1>{t('title')}</h1> */}
+      <Header />
 
       <Hero />
       <Work />
