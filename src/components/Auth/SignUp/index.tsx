@@ -6,6 +6,9 @@ import SocialSignUp from "../SocialSignUp";
 import Logo from "@/components/Layout/Header/Logo";
 import { useState } from "react";
 import Loader from "@/components/Common/Loader";
+// import Link from 'next/link';
+
+
 const SignUp = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -80,12 +83,12 @@ const SignUp = () => {
           />
         </div>
         <div className="mb-9">
-          <button
+          <Link href="/about"
             type="submit"
             className="flex w-full items-center text-18 font-medium justify-center rounded-md bg-primary px-5 py-3 text-darkmode transition duration-300 ease-in-out hover:bg-transparent hover:text-primary border-primary border "
           >
             Ro'yxatdan o'tish {loading && <Loader />}
-          </button>
+          </Link>
         </div>
       </form>
 

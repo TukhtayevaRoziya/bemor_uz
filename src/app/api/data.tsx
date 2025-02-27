@@ -156,8 +156,8 @@ export const timelineData: {
 ];
 
 export const BemorUzData: { name: string; price: number }[] = [
-  { name: "Bitcoin BTC/USD", price: 67646.84 },
-  { name: "Ethereum ETH/USD", price: 2515.93 },
-  { name: "Bitcoin Cash BTC/USD", price: 366.96 },
-  { name: "Litecoin LTC/USD", price: 61504.54 },
+  { name: "Premium 1 oylik/so'm", price: 10.000 },
+  { name: "Premium 3 oylik/so'm", price: 25.000 },
+  { name: "Premium 1 yillik/so'm", price: 100.000 },
+  // { name: "Litecoin LTC/USD", price: 61504.54 },
 ];

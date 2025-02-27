@@ -53,9 +53,9 @@ const BuyBemorUz = () => {
     setIsDropdownOpen(false);
   };
 
-  const totalCost = formData.amount
-    ? (formData.price * parseFloat(formData.amount)).toFixed(2)
-    : "0.00";
+  const totalCost = formData.price
+    // ? (formData.price).toFixed(2)
+    || "0.00";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -105,12 +105,12 @@ const BuyBemorUz = () => {
             type="text"
             name="price"
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full focus:border-primary focus-visible:outline-0"
-            value={`$${formData.price.toLocaleString()}`}
+            value={`${formData.price.toLocaleString()} so'm`}
             disabled
             required
           />
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <input
             id="amount"
             type="number"
@@ -122,13 +122,13 @@ const BuyBemorUz = () => {
             required
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full focus:border-primary focus-visible:outline-0"
           />
-        </div>
+        </div> */}
         <div className="flex justify-between mb-4 text-white">
-          <p>Total Cost: </p>
-          <p>${totalCost}</p>
+          <p>Umumiy narx: </p>
+          <p>{totalCost} so'm</p>
         </div>
         <button className="text-darkmode font-medium text-18 bg-primary w-full border border-primary rounded-lg py-3 hover:text-primary hover:bg-transparent">
-          Buy
+          Sotib olish
         </button>
       </form>
     </div>
